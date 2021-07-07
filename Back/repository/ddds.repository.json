@@ -1,0 +1,19 @@
+{
+    "origem": [
+        11,
+        16,
+        17,
+        18
+    ],
+    "destino": [
+        11,
+        16,
+        17,
+        18
+    ],
+    "planos": [
+        "FaleMais30",
+        "FaleMais60",
+        "FaleMais120"
+    ]
+}

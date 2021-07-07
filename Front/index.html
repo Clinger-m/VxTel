@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VxTel</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body">
+    <header>
+        <nav>
+            <div class="menu">
+                <img src="img/horizontal_on_white_by_logaster.png" alt="">
+                <a href="#">
+                    <p>Para você</p>
+                </a>
+                <a href="#">
+                    <p>Para sua empresa</p>
+                </a>
+                <a href="#">
+                    <p>Quem somos?</p>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section id="planos-calc">
+        <div class="card">
+            <div class="card-body ">
+
+                <form name="usuarioForm" method="POST">
+
+                    <div class="container-fluid text-center margin">
+                        <div class="container">
+                        <div class="row simulation">
+                            <h1>Calcule sua ligação</h1>
+
+                            <div class="col-lg-6 ">
+                                <label for="origem" class="form-label">Origem</label>
+                                <select class="form-select" name="origem" id="origem" required>
+                                    <option value=""selected>Selecione </option>
+                                    
+                                        
+                                </select>
+                            </div>
+
+                            <div class="col-lg-6 ">
+                                <label for="destino" class="form-label">Destino</label>
+                                <select  tabindex="-1" aria-disabled="true" class="form-select" name="destino" id="destino" required>
+                                    <option value="" selected >Selecione</option>
+                                        
+                                </select>
+                            </div>
+
+                            <div class=" planos" >
+                                <label for="planos" class="form-label">Planos</label>
+                                <select class="form-select" name="planos" id="planos" required>
+                                    <option value="" selected>Escolha o plano</option>
+                                        
+                                </select>
+                            </div>
+
+                            <div class="duracao">
+                                <label for="tempo" class="form-label">Duração</label>
+                                <input type="number" name="duracao" id="duracao" class="form-control" required>
+                            </div>
+
+                            <div class="d-grid gap-2 col-8 mx-auto botao">
+                                <button class="btn btn-primary" type="submit" >Calcular</button>
+                            </div>
+
+                            
+                        </div>
+                        <div id="resultado"></div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos-minutos">
+        <div class="container-fluid text-center margin">
+            <h3 class="margin">Conheça nossos planos</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 f-30">
+                        <h3>FaleMais 30</h3>
+                        <p>Você tem até 30 minutos para falar sem custo. Começe a pagar apenas após o excedente desses
+                            minutos.</p>
+                        <img src="img/plano1.jpg" alt="imagem-serviços-1" width="80%">
+                        <div class="botao-1">
+                            <a href="#">Eu quero</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 f-60 ">
+                        <h3>FaleMais 60</h3>
+                        <p>Você tem até 60 minutos para falar sem custo. Começe a pagar apenas após o excedente desses
+                            minutos.</p>
+                        <img src="img/plano2.jpg" alt="imagem-serviços-1" width="80%">
+                        <div class="botao-2">
+                            <a href="#">Eu quero</a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 f-120 ">
+                        <h3>FaleMais 120</h3>
+                        <p>Você tem até 120 minutos para falar sem custo. Começe a pagar apenas após o excedente desses
+                            minutos.</p>
+                        <img src="img/plano3.jpg" alt="imagem-serviços-1" width="80%">
+                        <div class="botao-3">
+                            <a href="#">Eu quero</a>
+                        </div>
+                    </div>
+    </section>
+
+    <footer class="rodape">
+        <div>
+            <p>Desenvolvido por Marino Clinger</p>
+        </div>
+    </footer>
+
+</body>
+<script src="./script/pegaDados.js"></script>
+<script src="./script/enviaDados.js"></script>
+<script src="./script/controlaCampos.js"></script>
+
+</html>
