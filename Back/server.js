@@ -63,6 +63,8 @@ function calculo(data) {
         }
     }
 
+   
+
     const planos = [
         {
             nomePlano: "FaleMais30",
@@ -78,7 +80,10 @@ function calculo(data) {
         }
     ]
 
-    const semPlano = tarifas[data.origem][data.destino] * data.duracao
+    try {
+        const semPlano =  tarifas[data.origem][data.destino] * data.duracao
+
+
     let comPlano = 0
     
     const valorPlano = planos.filter(function (item) {
@@ -96,6 +101,10 @@ function calculo(data) {
     resCalc = `Valor com Plano: <strong>R$${comPlano.toFixed(2)}</strong> <br> Valor sem plano: <strong>R$${semPlano.toFixed(2)}</strong>` // mudar
     
     return resCalc
+        
+    } catch (e) {
+        return ('Algo deu errado')
+    }    
 }
 
 app.listen('4567', function () {
